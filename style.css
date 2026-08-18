@@ -1,0 +1,147 @@
+/* RESET E BASE */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #eef2f7;
+}
+
+/* HEADER */
+header {
+  background: #1e1e2f;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+header .nav a:hover {
+  text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+  padding: 40px 20px;
+  text-align: center;
+  background: #bbd4fd;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #3852bb;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.hero .btn:hover {
+  background: #3a55d1;
+}
+
+/* MAIN PRODUTOS */
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.produto {
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.produto .img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.produto button {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #4a6cf7;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.produto button:hover {
+  background: #3a55d1;
+}
+
+/* BOTÃO CARRINHO FIXO */
+#btnCarrinho {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  background: #4a6cf7;
+  color: white;
+  cursor: pointer;
+}
+
+/* CARRINHO */
+#carrinho {
+  position: fixed;
+  right: 20px;
+  top: 70px;
+  width: 300px;
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.hidden {
+  display: none;
+}
+
+#carrinho ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.remover {
+  background: red;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+/* SEÇÕES ADICIONAIS */
+.content .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+/* FOOTER */
+footer {
+  background: #1e1e2f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}

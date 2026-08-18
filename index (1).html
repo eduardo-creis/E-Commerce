@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seu Site</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <h1 class="logo">MINHA LOGO</h1>
+      <nav class="nav">
+        <a href="#">Início</a>
+        <a href="#">Sobre</a>
+        <a href="#">Serviços</a>
+        <a href="#">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h2>DudStore</h2>
+      <p>Praticidade e estilo para o seu dia a dia.</p>
+      <a class="btn" href="#">Saiba mais</a>
+    </div>
+  </section>
+
+  <!-- PRODUTOS -->
+  <main>
+    <div class="produto" data-id="1" data-nome="Produto 1" data-preco="75">
+      <img src="Csnike.png" class="img" alt="Produto 1">
+      <h3>Produto 1</h3>
+      <p>R$ 75</p>
+      <button>Adicionar</button>
+    </div>
+    <div class="produto" data-id="2" data-nome="Produto 2" data-preco="45">
+      <img src="Bn.png" class="img" alt="Produto 2">
+      <h3>Produto 2</h3>
+      <p>R$ 45</p>
+      <button>Adicionar</button>
+    </div>
+    <div class="produto" data-id="3" data-nome="Produto 3" data-preco="280">
+      <img src="Tnnike.png" class="img" alt="Produto 3">
+      <h3>Produto 3</h3>
+      <p>R$ 280</p>
+      <button>Adicionar</button>
+    </div>
+  </main>
+
+  <!-- BOTÃO CARRINHO -->
+  <button id="btnCarrinho">Carrinho (<span id="contador">0</span>)</button>
+
+  <!-- CARRINHO -->
+  <div id="carrinho" class="hidden">
+    <button id="fecharCarrinho">Fechar</button>
+    <ul id="listaCarrinho"></ul>
+    <p id="total">Total: R$ 0</p>
+  </div>
+
+  <!-- SEÇÕES -->
+  <section class="content">
+    <div class="container grid">
+      <div class="card">
+        <h3>Seção 1</h3>
+        <p>.</p>
+      </div>
+      <div class="card">
+        <h3>Seção 2</h3>
+        <p>.</p>
+      </div>
+      <div class="card">
+        <h3>Seção 3</h3>
+        <p>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Dudu.dev</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
